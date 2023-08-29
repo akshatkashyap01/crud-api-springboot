@@ -46,6 +46,8 @@ In the Console view, you'll see the Spring Boot application's output as it start
 
 Using Postman:
 
+In your postman please add "Content-type" in key and "application/json" in value and then you are good to go
+
 1.Test Endpoints:
 Open Postman and use the configured endpoints to test the API. Make sure to set the appropriate HTTP method, URL, headers (e.g., Content-Type), and request body (if required).
 
