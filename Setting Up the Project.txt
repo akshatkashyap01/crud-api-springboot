@@ -1,0 +1,66 @@
+Setting Up the Project:
+
+
+1.Import Project:
+ Open Spring Tool Suite (STS) and go to "File" > "Import...". Choose "Existing Maven Projects" and navigate to the root directory of your project. Select the project directory and click "Finish" to import the project.
+
+2.Configure Database:
+  Open the application.properties file and configure your MySQL database settings:
+
+  spring.datasource.url=jdbc:mysql://localhost:3306/userdb
+  spring.datasource.username=root
+  spring.datasource.password=3606
+
+
+3.Maven Build:
+In the Project Explorer, right-click on your project and select "Run As" > "Maven Build...". In the goals, type clean install and click "Run" to build the project and download dependencies.
+
+
+
+
+Running Tests:
+
+Run Tests:
+1.Navigate to Test Class:
+In the Project Explorer, locate the test class SpringBootCrudApplicationTests.java under the src/test/java directory.
+
+2.Run All Tests:
+Right-click on the test class name (SpringBootCrudApplicationTests) and select "Run As" > "JUnit Test". This will execute all the test methods in the class.
+
+3.View Test Results:
+After running the tests, switch to the "JUnit" view in STS to see the test results, including which tests passed or failed.
+
+
+
+Running the Project:
+
+Running the Spring Boot Application:
+
+1.Run As Spring Boot App:
+Right-click on the main class SpringBootCrudApplication.java located in your project's main package. Select "Run As" > "Spring Boot App" to start the application.
+
+2.View Application Output:
+In the Console view, you'll see the Spring Boot application's output as it starts up. The application will be accessible at http://localhost:8080.
+
+
+
+Using Postman:
+
+1.Test Endpoints:
+Open Postman and use the configured endpoints to test the API. Make sure to set the appropriate HTTP method, URL, headers (e.g., Content-Type), and request body (if required).
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Link of running application and testing api:-  https://www.youtube.com/watch?v=SsSyp05ZVTg
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Important Note:-
+Make sure that the database server is up and running with the correct configuration (username, password, database name). If you encounter any issues related to database connectivity or classpath, double-check the configuration and dependencies.
+
+
+
+With these steps, you should be able to set up the project, run tests, and run the Spring Boot application in Spring Tool Suite.
